@@ -1,7 +1,9 @@
+import SectionHeading from './SectionHeading'
+
 export default function TechStack() {
   return (
     <section id="tech-stack">
-      <h2 className="text-2xl mb-10 w-1/2 mx-auto font-bold border-2 border-red-400 p-2 rounded-lg">Tech Stack</h2>
+      <SectionHeading title="Tech Stack" />
       
       {/* Frontend Technologies */}
       <div className="mb-8">
