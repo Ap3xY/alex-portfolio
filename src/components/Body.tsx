@@ -30,13 +30,13 @@ export default function Body() {
           </p>
           <div className="flex justify-center gap-6">
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:alexvdberg010109@gmail.com" 
               className="flex items-center gap-2 bg-red-400 hover:bg-red-500 text-white px-6 py-3 rounded-lg transition-colors duration-200 ease-in-out"
             >
               ✉️ Email Me
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/Ap3xY" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center gap-2 bg-red-400 hover:bg-red-500 text-white px-6 py-3 rounded-lg transition-colors duration-200 ease-in-out"
@@ -44,7 +44,7 @@ export default function Body() {
               📦 GitHub
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/alexvdberg010109/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center gap-2 bg-red-400 hover:bg-red-500 text-white px-6 py-3 rounded-lg transition-colors duration-200 ease-in-out"

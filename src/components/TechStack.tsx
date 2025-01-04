@@ -90,6 +90,36 @@ export default function TechStack() {
               <div className="bg-red-400 h-2 rounded-full w-[55%]"></div>
             </div>
           </div>
+
+          <div className="border-2 border-red-400 rounded-lg p-4 w-40 hover:scale-105 transition-transform duration-200">
+            <div className="flex items-center gap-2 mb-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-6 h-6" />
+              <span className="font-semibold">PostgreSQL</span>
+            </div>
+            <div className="bg-gray-200 h-2 rounded-full">
+              <div className="bg-red-400 h-2 rounded-full w-[85%]"></div>
+            </div>
+          </div>
+
+          <div className="border-2 border-red-400 rounded-lg p-4 w-40 hover:scale-105 transition-transform duration-200">
+            <div className="flex items-center gap-2 mb-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-6 h-6" />
+              <span className="font-semibold">MySQL</span>
+            </div>
+            <div className="bg-gray-200 h-2 rounded-full">
+              <div className="bg-red-400 h-2 rounded-full w-[80%]"></div>
+            </div>
+          </div>
+
+          <div className="border-2 border-red-400 rounded-lg p-4 w-40 hover:scale-105 transition-transform duration-200">
+            <div className="flex items-center gap-2 mb-2">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="w-6 h-6" />
+              <span className="font-semibold">GCP</span>
+            </div>
+            <div className="bg-gray-200 h-2 rounded-full">
+              <div className="bg-red-400 h-2 rounded-full w-[75%]"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
