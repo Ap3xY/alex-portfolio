@@ -18,7 +18,11 @@ function SkillBar({ percentage, icon, name }: SkillBarProps) {
     <div ref={ref} className="border-2 border-red-400 rounded-lg p-4 w-40 hover:scale-105 transition-transform duration-200">
       <div className="flex items-center gap-2 mb-2">
         {typeof icon === 'string' ? (
-          <img src={icon} alt={name} className="w-6 h-6" />
+          <img 
+            src={icon} 
+            alt={name} 
+            className={`w-6 h-6 ${name === 'Next.js' ? 'dark:invert' : ''}`} 
+          />
         ) : (
           icon
         )}
