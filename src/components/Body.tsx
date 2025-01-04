@@ -3,7 +3,7 @@ import TechStack from './TechStack'
 
 export default function Body() {
   return (
-    <div className="flex flex-col mt-10 sm:mt-20 gap-10 sm:gap-20 p-4 text-center mx-auto">
+    <div className="flex flex-col mt-10 sm:mt-20 gap-16 sm:gap-20 p-4 text-center mx-auto">
       {/* About Me section */}
       <section id="about">
         <SectionHeading title="About Me" />
