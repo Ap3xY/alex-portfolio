@@ -17,6 +17,12 @@ export default function Header() {
           About
         </a>
         <a 
+          href="#timeline" 
+          className="bg-red-400 hover:bg-red-500 text-white px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 ease-in-out text-sm sm:text-base"
+        >
+          Timeline
+        </a>
+        <a 
           href="#tech-stack" 
           className="bg-red-400 hover:bg-red-500 text-white px-3 sm:px-4 py-2 rounded-lg transition-colors duration-200 ease-in-out text-sm sm:text-base"
         >

@@ -77,6 +77,16 @@ export default function TechStack() {
             percentage={95}
           />
           <SkillBar 
+            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            name="JavaScript"
+            percentage={95}
+          />
+          <SkillBar 
+            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
+            name="Ruby"
+            percentage={65}
+          />
+          <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elixir/elixir-original.svg"
             name="Elixir"
             percentage={60}
@@ -88,11 +98,6 @@ export default function TechStack() {
       <div>
         <h3 className="text-xl mb-4 text-red-400">Backend</h3>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-          <SkillBar 
-            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg"
-            name="Ruby"
-            percentage={65}
-          />
           <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original.svg"
             name="Phoenix"

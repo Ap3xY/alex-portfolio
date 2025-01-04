@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion'
 import SectionHeading from './SectionHeading'
 import TechStack from './TechStack'
+import Timeline from './Timeline'
 
 export default function Body() {
   return (
@@ -13,14 +15,31 @@ export default function Body() {
             I've specialized in modern web development, particularly with Next.js, TypeScript, and Tailwind CSS, 
             while building and maintaining a sophisticated vouchering system.
           </p>
-          <p className="text-base sm:text-lg">
+          <p className="text-base sm:text-lg mb-4">
             My expertise lies in creating responsive, user-friendly web applications using React-based technologies. 
             Through my startup experience, I've gained valuable insights into building scalable solutions and 
             working in an agile environment. I'm passionate about clean code, modern development practices, and 
             continuously expanding my technical knowledge.
           </p>
+          <p className="text-base sm:text-lg">
+            Currently, I'm self-studying Elixir and Ruby on Rails to deepen my understanding of both functional 
+            programming and object-oriented programming paradigms. This journey helps me become a more well-rounded 
+            developer and brings fresh perspectives to my software development approach.
+          </p>
         </div>
       </section>
+
+      {/* Timeline section */}
+      <motion.section 
+        id="timeline"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <SectionHeading title="Experience & Education" />
+        <Timeline />
+      </motion.section>
 
       <TechStack />
 
