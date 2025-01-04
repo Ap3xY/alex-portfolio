@@ -33,3 +33,24 @@ html {
   opacity: .1;
   pointer-events: none;
 }
+
+:root {
+  /* Existing light theme variables */
+  --primary-color: #2563eb;
+  --text-color: #1f2937;
+  --bg-color: #ffffff;
+  /* Add any other light theme variables you have */
+}
+
+[data-theme='dark'] {
+  --primary-color: #3b82f6;
+  --text-color: #f3f4f6;
+  --bg-color: #111827;
+  /* Add dark versions of your other color variables */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

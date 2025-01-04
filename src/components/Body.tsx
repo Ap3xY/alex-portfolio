@@ -5,11 +5,11 @@ import Timeline from './Timeline'
 
 export default function Body() {
   return (
-    <div className="flex flex-col mt-10 sm:mt-20 gap-16 sm:gap-20 p-4 text-center mx-auto">
+    <main className="flex-1 p-4 sm:p-8 bg-white dark:bg-gray-900">
       {/* About Me section */}
-      <section id="about">
+      <section className="max-w-4xl mx-auto mb-16 sm:mb-24 mt-8 sm:mt-12" id="about">
         <SectionHeading title="About Me" />
-        <div className="max-w-2xl mx-auto px-4">
+        <div className="max-w-2xl mx-auto px-4 text-gray-800 dark:text-gray-200">
           <p className="text-base sm:text-lg mb-4">
             Hi! I'm a full-stack developer with 1 year of professional experience working in a startup environment. 
             I've specialized in modern web development, particularly with Next.js, TypeScript, and Tailwind CSS, 
@@ -31,6 +31,7 @@ export default function Body() {
 
       {/* Timeline section */}
       <motion.section 
+        className="max-w-4xl mx-auto mb-16 sm:mb-24"
         id="timeline"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,12 +42,14 @@ export default function Body() {
         <Timeline />
       </motion.section>
 
-      <TechStack />
+      <section className="mb-16 sm:mb-24">
+        <TechStack />
+      </section>
 
       {/* Contact section */}
-      <section id="contact" className="mb-10 sm:mb-20">
+      <section className="max-w-4xl mx-auto mb-16 sm:mb-24" id="contact">
         <SectionHeading title="Contact" />
-        <div className="max-w-2xl mx-auto px-4">
+        <div className="max-w-2xl mx-auto px-4 text-gray-800 dark:text-gray-200">
           <p className="text-base sm:text-lg mb-6">
             I'm always open to new opportunities and collaborations. 
             Feel free to reach out!
@@ -83,7 +86,7 @@ export default function Body() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   )
 }
 

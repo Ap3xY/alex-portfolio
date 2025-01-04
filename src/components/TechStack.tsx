@@ -43,7 +43,7 @@ export default function TechStack() {
       
       {/* Frontend Technologies */}
       <div className="mb-8">
-        <h3 className="text-xl mb-4 text-red-400">Frontend</h3>
+        <h3 className="text-xl mb-4 text-red-400 text-center">Frontend</h3>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
           <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -69,7 +69,7 @@ export default function TechStack() {
 
       {/* Languages section */}
       <div className="mb-8">
-        <h3 className="text-xl mb-4 text-red-400">Languages</h3>
+        <h3 className="text-xl mb-4 text-red-400 text-center">Languages</h3>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
           <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
@@ -96,7 +96,7 @@ export default function TechStack() {
 
       {/* Backend section */}
       <div>
-        <h3 className="text-xl mb-4 text-red-400">Backend</h3>
+        <h3 className="text-xl mb-4 text-red-400 text-center">Backend</h3>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
           <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original.svg"

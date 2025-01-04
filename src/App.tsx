@@ -5,13 +5,13 @@ import ScrollToTop from "./components/ScrollToTop"
 
 function App() {
   return (
-    <main className="flex flex-col min-h-screen bg-zinc-300 relative">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-200">
       <div className="noise" aria-hidden="true" />
       <Header/>
       <Body/>
       <Footer/>
       <ScrollToTop />
-    </main>
+    </div>
   )
 }
 

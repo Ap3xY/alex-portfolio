@@ -1,9 +1,14 @@
+import { useTheme } from '../context/ThemeContext';
+import { FaSun, FaMoon } from 'react-icons/fa';
+
 export default function Header() {
+  const { theme, toggleTheme } = useTheme();
+  
   return (
-    <header className="flex flex-col items-center p-4 sm:p-8 gap-4 sm:gap-6 bg-slate-50 shadow-sm">
+    <header className="flex flex-col items-center p-4 sm:p-8 gap-4 sm:gap-6 bg-slate-50 dark:bg-gray-800 shadow-sm">
       <div className="flex justify-center items-center w-full max-w-4xl">
         <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl font-bold leading-relaxed">
+          <h1 className="text-2xl sm:text-3xl font-bold leading-relaxed dark:text-white">
             Hi, I'm <span className="text-red-400 hover:text-red-500 transition-colors">Alex</span>. <br className="sm:hidden" /> 
             Welcome to my portfolio!
           </h1>
@@ -35,6 +40,13 @@ export default function Header() {
           Contact
         </a>
       </nav>
+      <button
+        onClick={toggleTheme}
+        className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 dark:text-white transition-colors"
+        aria-label="Toggle theme"
+      >
+        {theme === 'light' ? <FaMoon /> : <FaSun />}
+      </button>
     </header>
   )
 }
