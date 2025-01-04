@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import SectionHeading from './SectionHeading'
+import { Inter, Poppins } from 'next/font/google'
 
 // Create a reusable SkillBar component
 interface SkillBarProps {
