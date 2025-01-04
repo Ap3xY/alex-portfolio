@@ -61,17 +61,13 @@ export default function Body() {
       </section>
 
       {/* Timeline section */}
-      <motion.section 
+      <section 
         className="max-w-4xl mx-auto mb-16 sm:mb-24"
         id="timeline"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <SectionHeading title="Experience & Education" />
         <Timeline />
-      </motion.section>
+      </section>
 
       <section className="mb-16 sm:mb-24">
         <TechStack />
