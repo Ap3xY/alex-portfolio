@@ -99,6 +99,11 @@ export default function TechStack() {
         <h3 className="text-xl mb-4 text-red-400 text-center">Backend</h3>
         <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
           <SkillBar 
+            icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg"
+            name="Rails"
+            percentage={65}
+          />
+          <SkillBar 
             icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/phoenix/phoenix-original.svg"
             name="Phoenix"
             percentage={55}
