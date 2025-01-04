@@ -6,6 +6,37 @@ import Timeline from './Timeline'
 export default function Body() {
   return (
     <main className="flex-1 p-4 sm:p-8 bg-white dark:bg-gray-900">
+      {/* Scroll indicator */}
+      <motion.div
+        className="flex justify-center mb-12"
+        animate={{
+          y: [0, 10, 0],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+      >
+        <a 
+          href="#about"
+          className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors"
+          aria-label="Scroll to about section"
+        >
+          <svg 
+            className="w-6 h-6"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
+        </a>
+      </motion.div>
+
       {/* About Me section */}
       <section className="max-w-4xl mx-auto mb-16 sm:mb-24 mt-8 sm:mt-12" id="about">
         <SectionHeading title="About Me" />
