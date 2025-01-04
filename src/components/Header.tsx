@@ -8,7 +8,13 @@ export default function Header() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   
-  const text = "Hi, I'm Alex. \nI'm a Web Developer. \nWelcome to my portfolio!";
+  const textSegments = [
+    { text: "Hi, I'm ", color: 'default' },
+    { text: "Alex", color: 'red' },
+    { text: ".\nI'm a ", color: 'default' },
+    { text: "Web Developer", color: 'red', underline: true },
+    { text: ".\nWelcome to my portfolio!", color: 'default' }
+  ];
   
   return (
     <header className="flex flex-col items-center p-4 sm:p-8 gap-4 sm:gap-6 bg-slate-50 dark:bg-gray-800 shadow-sm">
@@ -19,19 +25,23 @@ export default function Header() {
             initial={{ opacity: 1 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           >
-            {text.split('').map((char, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={isInView ? { opacity: 1 } : { opacity: 0 }}
-                transition={{
-                  duration: 0.1,
-                  delay: index * 0.05,
-                  ease: "easeIn"
-                }}
-              >
-                {char === '\n' ? <br /> : char}
-              </motion.span>
+            {textSegments.map((segment, segmentIndex) => (
+              segment.text.split('').map((char, charIndex) => (
+                <motion.span
+                  key={`${segmentIndex}-${charIndex}`}
+                  initial={{ opacity: 0 }}
+                  animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+                  transition={{
+                    duration: 0.1,
+                    delay: (segmentIndex * segment.text.length + charIndex) * 0.03,
+                    ease: "easeIn"
+                  }}
+                  className={`${segment.color === 'red' ? 'text-red-400' : ''} 
+                    ${segment.underline ? 'underline decoration-red-400 decoration-2' : ''}`}
+                >
+                  {char === '\n' ? <br /> : char}
+                </motion.span>
+              ))
             ))}
           </motion.h1>
         </div>
